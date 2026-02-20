@@ -1,0 +1,55 @@
+# Example YAML Structure
+
+date: 2026-02-20 22:13:58
+user:
+  login: titi3625
+  details:
+    name: John Doe
+    age: 30
+    email: johndoe@example.com
+address:
+  street: 123 Main St
+  city: Anytown
+  state: CA
+  postalCode: 12345
+  coordinates:
+    latitude: 34.0522
+    longitude: -118.2437
+
+skills:
+  - name: Programming
+    languages:
+      - Python
+      - JavaScript
+      - Go
+  - name: Design
+    tools:
+      - Photoshop
+      - Illustrator
+
+projects:
+  project:
+    title: "Project Alpha"
+    description: "A complex project to demonstrate YAML structure"
+    team:
+      - name: Alice
+        role: Developer
+      - name: Bob
+        role: Designer
+    tasks:
+      - task: Setup project
+        status: Complete
+      - task: Develop features
+        status: In Progress
+      - task: Create documentation
+        status: Pending
+
+settings:
+  theme: dark
+  notifications:
+    email: true
+    sms: false
+  languages:
+    - English
+    - Spanish
+
