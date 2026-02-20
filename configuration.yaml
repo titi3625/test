@@ -1,0 +1,35 @@
+database:
+  host: localhost
+  port: 5432
+  username: dbuser
+  password: dbpassword
+  database_name: mydb
+
+application:
+  title: My Application
+  version: 1.0.0
+  environment: production
+
+logging:
+  level: info
+  file: /var/log/myapp.log
+  rotation:
+    type: daily
+    max_size: 10MB
+
+deployment:
+  strategy: blue-green
+  replicas: 3
+  image: myapp:latest
+  health_check:
+    path: /health
+    interval: 30s
+    timeout: 5s
+
+services:
+  web:
+    image: myapp-web:latest
+    port: 80
+  api:
+    image: myapp-api:latest
+    port: 8080
